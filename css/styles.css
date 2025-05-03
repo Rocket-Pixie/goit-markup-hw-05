@@ -210,114 +210,7 @@ margin: 0 auto;
     }
      
 /*----------------------------Перша секція сторінки------------------------------------*/
-.modal_overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(46, 47, 66, 0.4);
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 250ms ease-in-out;
-}
-.modal_overlay.is-open{
-    opacity: 1;
-    pointer-events: auto;
-}
-.modal{
-border-radius: 4px;
-width: 408px;
-height: 584px;
-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-background: #fcfcfc;
-max-width: 408px;
-max-height: 80%;
-overflow-y: auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 24px;
-}
-.user_name{
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
-letter-spacing: 0.04em;
-color: #8e8f99;
-}
-.user_name{
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px; 
-    background-image: url(./images/icons.svg#icon-username);
-    justify-content: center;
-}
-.user_tel{
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px; 
-    background-image: url(./images/icons.svg#icon-phone);
-    justify-content: center;
-}
-.modal_close{
-    align-self:flex-end;
-    top: 16px;
-    right: 16px;
-    width: 24px;
-    height: 24px;
-    background-image: url(./images/icons.svg#icon-close);
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-}
-.user_email{
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px; 
-    background-image: url(./images/icons.svg#icon-email);
-    justify-content: center;
-}
-.user_checkbox{
-    border: 1px solid #4d5ae5;
-    border-radius: 4px;
-    width: 360px;
-    height: 40px; 
-    background-image: url(./images/icons.svg#icon-checkbox);
-    justify-content: center;
-}
-.user_names{
-    margin-top: 16px;
-}
-.modal_head{
-    font: 500 16px / 1.5 "Roboto", sans-serif;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-width: 360px;
-height: 24px;
-}
-.modal_btn{
-border-radius: 4px;
-padding: 16px 32px;
-width: 169px;
-height: 56px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: #4d5ae5;
-flex-direction: row;
-gap: 10px;
-font: 500 16px / 1.5 "Roboto", sans-serif;
-letter-spacing: 0.04em;
-text-align: center;
-color: #fff;
-margin:0 auto;
-cursor: pointer;
-}
+
 /*----------------------------Друга секція сторінки------------------------------------*/
 .second_section{
     background: #f4f4fd;
@@ -530,19 +423,34 @@ border-top: none;
     margin-right: 120px;
     display: flex;
     flex-direction: column;
-
+    width: 264px;
+    height: 112px;
 }
+    .logo_site_foot{
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:#4d5ae5;
+        margin-right: 120px;
+        gap: 40px;
+        display:inline-block;
+        margin-bottom: 16px;
+        } /*Логотип сайту*/
 .foot_p{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin: 0 0 16px 0;
+    margin: 120px 0 16px 0;
 }
 .foot_sm_list{
     display: flex;
     gap: 16px;
+    padding-left: 0%;
 }
 .foot_sm_li{
     width: 40px;
@@ -572,5 +480,150 @@ border-top: none;
 .foot_sm_svg{
     fill:#f4f4fd !important
 }
+.form_foot{
+    width: 453px;
+    height: 80px;
+}
+.form_foot_p{
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+margin-left: 80px;
+}
+.form_foot_input{
+    border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+background: #fff;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background-color: transparent;
+font: 400 12px / 2 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+color: #fff;
+margin-left: 80px;
+}
+.form_foot_btn{
+min-width: 165px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+border: none;
+border-radius: 4px;
+}
 
-
+/*----------------------------Modal window------------------------------------*/
+.modal_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+.modal_overlay.is-open{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal{
+border-radius: 4px;
+width: 408px;
+height: 584px;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+background: #fcfcfc;
+max-width: 408px;
+max-height: 80%;
+overflow-y: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 24px;
+}
+.user_name{
+    font: 400 12px / 1.16667 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+.user_name{
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px; 
+    background-image: url(./images/icons.svg#icon-username);
+    justify-content: center;
+}
+.user_tel{
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px; 
+    background-image: url(./images/icons.svg#icon-phone);
+    justify-content: center;
+}
+.modal_close{
+    align-self:flex-end;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background-image: url(./images/icons.svg#icon-close);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.user_email{
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px; 
+    background-image: url(./images/icons.svg#icon-email);
+    justify-content: center;
+}
+.user_checkbox{
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px; 
+    background-image: url(./images/icons.svg#icon-checkbox);
+    justify-content: center;
+}
+.user_names{
+    margin-top: 16px;
+}
+.modal_head{
+    font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+width: 360px;
+height: 24px;
+}
+.modal_btn{
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+flex-direction: row;
+gap: 10px;
+font: 500 16px / 1.5 "Roboto", sans-serif;
+letter-spacing: 0.04em;
+text-align: center;
+color: #fff;
+margin:0 auto;
+cursor: pointer;
+}
