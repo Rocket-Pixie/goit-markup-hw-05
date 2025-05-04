@@ -518,7 +518,7 @@ border: none;
 border-radius: 4px;
 }
 .form_foot_box{
-    dsplay: flex;
+    display: flex;
     gap: 24px;
 }
 .form_foot_svg{
