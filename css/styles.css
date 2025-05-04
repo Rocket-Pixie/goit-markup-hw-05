@@ -502,7 +502,7 @@ background-color: transparent;
 font: 400 12px / 2 "Roboto", sans-serif;
 letter-spacing: 0.04em;
 color: #fff;
-margin-left: 80px;
+padding-left: 80px;
 }
 .form_foot_btn{
 min-width: 165px;
@@ -517,7 +517,13 @@ color: #fff;
 border: none;
 border-radius: 4px;
 }
-
+.form_foot_box{
+    dsplay: flex;
+    gap: 24px;
+}
+.form_foot_svg{
+    margin-left: 16px;
+}
 /*----------------------------Modal window------------------------------------*/
 .modal_overlay{
     position: fixed;
