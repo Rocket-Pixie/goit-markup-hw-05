@@ -634,6 +634,13 @@ color: #8e8f99;
 }
 .user_names{
     margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+    
 }
 .modal_head{
     font: 500 16px / 1.5 "Roboto", sans-serif;
@@ -666,4 +673,10 @@ cursor: pointer;
 }
 .modal_svg:focus{
     fill: #ffffff;
+}
+.modal_svg{
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.modal_form_box{
+    margin-bottom: 8px;
 }
