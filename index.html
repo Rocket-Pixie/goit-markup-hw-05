@@ -385,12 +385,17 @@
                 </div>
             </div>
             <div class="modal_textarea">
-                <label for="user-comment">Comment</label>
+                <label class="user_names"  for="user-comment">Comment</label>
                 <textarea class="textarea_mod" id="user-comment" name="user-comment" rows="12" placeholder="Text input"></textarea>
             </div>
             <div class="checkbox_box">
-                <input class="user_checkbox" type="checkbox" id="user-privacy" name="user-privacy" value="true">I accept the terms and conditions of the <a>Privacy Policy</a>
-                <button class="modal_btn">Send</button>
+                <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+                <label class="input-field" for="user-privacy">I accept the terms and conditions of the <span class="privacy_s"><a class="privacy_l">Privacy Policy</a>
+                    <svg class="privacy_svg" width="10" height="8">
+                        <use href="./images/icons.svg#icon-privacy"></use>
+                    </svg>
+                </span></label> 
+                <button class="modal_btn_f">Send</button>
             </div>
             </form> 
     </div>
