@@ -743,7 +743,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .input-field:focus {
     border-color: #4D5AE5;
 }
-.span_privacy{
+.s_privacy{
     width: 16px;
     height: 16px;  
     border: 1px solid rgba(46,47,66,0.4);
@@ -754,7 +754,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     fill: transparent;
 }
-input[type="checkbox"]:checked + .privacy_svg{
+input[type="checkbox"]:checked + .s_privacy{
         background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
