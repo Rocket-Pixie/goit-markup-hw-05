@@ -682,7 +682,7 @@ cursor: pointer;
     width: 100%;
     border: 1px solid #4d5ae5;
 border-radius: 4px;
-width: 360px;
+max-width: 360px;
 height: 40px;
 border:1px solid rgba(46,47,66,0.4);
 background-color: transparent;
@@ -755,10 +755,14 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
     
 }
-input[type="checkbox"]:checked + .privacy_s {
+input[type="checkbox"]:checked+.privacy_s {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
+}
+input[type="checkbox"]:checked +label .privacy_s svg{
+    fill: #f4f4fd;
+    background-color: #404bbf;
 }
 .privacy_l{
     color: #4d5ae5;
@@ -767,7 +771,7 @@ input[type="checkbox"]:checked + .privacy_s {
     display: block;
     min-width: 169px;
     height: 56px;
-    font-family: "Roboto"sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -777,4 +781,20 @@ input[type="checkbox"]:checked + .privacy_s {
     background-color: #4d5ae5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.modal_btn_f:hover,.modal_btn_f:focus{
+    background-color: #404bbf;
+}
+[class*="btn"],
+[class*="btn_"],
+[class*="btn-f"] {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
 }

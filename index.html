@@ -348,61 +348,65 @@
         </div>
     </footer>
     <!-- Модальне вікно -->
-  <div class="modal_overlay">
-    <div class="modal">
-        <button class="modal_close" type="button">
-            <svg class="modal_svg" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <p class="modal_head">Leave your contacts and we will call you back</p>
-        <form action="https://example.com/submit" method="POST" class="modal_form">
-            <div class="modal_form_box">
-                <label class="user_names" for="user-name">Name</label>
-                <div class="user_name_input">
-                    <input class="input_user_name" type="text" id="user-name" name="user-name">
-                    <svg class="user_name_svg" width="18" height="24">
-                        <use href="./images/icons.svg#icon-username"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="modal_form_box">
-                <label class="user_names" for="userphone">Phone</label>
-                <div class="user_name_input">
-                    <input class="input_user_name" type="tel" id="userphone" name="userphone">
-                    <svg class="user_name_svg" width="18" height="24">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="modal_form_box">
-                <label class="user_names" for="useremail">Email</label>
-                <div class="user_name_input">
-                    <input class="input_user_name" type="email" id="useremail" name="useremail">
-                    <svg class="user_name_svg" width="18" height="24">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="modal_textarea">
-                <label class="user_names" for="user-comment">Comment</label>
-                <textarea class="textarea_mod" id="user-comment" name="user-comment" rows="12" placeholder="Text input"></textarea>
-            </div>
-            <div class="checkbox_box">
-                <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
-                <label class="input-field" for="user-privacy">
-                    I accept the terms and conditions of the 
-                    <span class="privacy_s">
-                        <svg class="privacy_svg" width="10" height="8">
-                            <use href="./images/icons.svg#icon-privacy"></use>
-                        </svg>
-                        <a href="/privacy_policy.html" class="privacy_l">Privacy Policy</a>
-                    </span>
-                </label> 
-            </div>
-            <button class="modal_btn_f">Send</button>
-        </form> 
-    </div>
+    <div class="modal_overlay">
+  <div class="modal">
+    <button class="modal_close" type="button">
+      <svg class="modal_svg" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal_head">Leave your contacts and we will call you back</p>
+    <form action="https://example.com/submit" method="POST" class="modal_form">
+      <div class="modal_form_box">
+        <label class="user_names" for="user-name">Name</label>
+        <div class="user_name-inpt">
+          <input class="input_user_name" type="text" id="user-name" name="user-name" required>
+          <svg class="user_name_svg" width="18" height="24">
+            <use href="./images/icons.svg#icon-username"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal_form_box">
+        <label class="user_names" for="userphone">Phone</label>
+        <div class="user_name-inpt">
+          <input class="input_user_name" type="tel" id="userphone" name="userphone" required>
+          <svg class="user_name_svg" width="18" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal_form_box">
+        <label class="user_names" for="useremail">Email</label>
+        <div class="user_name-inpt">
+          <input class="input_user_name" type="email" id="useremail" name="useremail" required>
+          <svg class="user_name_svg" width="18" height="24">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal_textarea">
+        <label class="user_names" for="user-comment">Comment</label>
+        <textarea class="textarea_mod" id="user-comment" name="user-comment" rows="12" placeholder="Text input"></textarea>
+      </div>
+
+      <div class="checkbox_box">
+        <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true" required>
+        <label class="input-field" for="user-privacy">
+          I accept the terms and conditions of the 
+          <a href="privacy_policy" class="privacy_l">Privacy Policy</a>
+          <svg class="privacy_svg" width="10" height="8">
+            <use href="./images/icons.svg#icon-privacy"></use>
+          </svg>
+        </label>
+      </div>
+
+      <button class="modal_btn_f" type="submit">Send</button>
+    </form>
+  </div>
 </div>
+
 </body>
 </html>
