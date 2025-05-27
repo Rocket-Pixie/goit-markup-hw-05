@@ -717,7 +717,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .checkbox_box{
     margin-bottom: 24px;
 }
-.visually-hidden {
+.visually-hiden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -782,7 +782,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .privacy_s{
     color: #4d5ae5;
 }
-.input-field input[visually-hidden]:checked + span.s_privacy {
+#user-privacy:checked + label .s_privacy {
   background-color: var(--background-color, #404bbf);
   border: none;
 }
+
