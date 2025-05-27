@@ -782,7 +782,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .privacy_s{
     color: #4d5ae5;
 }
-.input-field input:checked ~ .s_privacy {
+.input-field input[visually-hidden]:checked + span.s_privacy {
   background-color: var(--background-color, #404bbf);
   border: none;
 }
